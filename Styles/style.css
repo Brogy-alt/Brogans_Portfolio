@@ -24,6 +24,8 @@ section {
 }
 
 
+
+
 /* Home section */
 
 #home {
@@ -43,13 +45,13 @@ section {
 
 
 main {
+        
 
-        background-image: url(/Assets/Images/Back3.jpg);
+        background: linear-gradient(rgba( 0,0,0,.7), rgba( 0,0,0,.7)) , url(/Assets/Images/Back3.jpg);
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
-        backdrop-filter: blur(5px);
-                
+        background-position: center;
+    
       }
 
 /* End of home section */
@@ -213,36 +215,6 @@ textarea:hover {
 }
 
 
-/* .youtube,
- .instagram,
- .twitter:hover {
-   transform: scale(1);
-
- } */
-
- /* Youtube icon hover */
- /* #socials .youtube:hover {
-    animation: iconAnimation 1s;
-    transition: all 2s;
-    font-size: 2rem;
- 
-  } */
- 
-  /* Instagram icon hover */
-  /* #socials .instagram:hover {
-    padding:0rem 1rem;
-    animation: iconAnimation 1s;
-    transition: all 1s;
-    font-size: 2rem;
-  } */
- 
-  /* Twitter icon hover */
-  /* #socials .twitter:hover {
-    animation: iconAnimation 1s;
-    transition: all 1s;
-    font-size: 2rem;
-  }
-  */
 
 @keyframes awesome {
     0% {}
