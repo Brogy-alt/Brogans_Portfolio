@@ -120,6 +120,7 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
+    
 }
 
  
@@ -237,6 +238,18 @@ textarea:hover {
     }
 }
 
+@media (width <= 1200px) {
+    body{
+        flex-flow:column wrap;
+    }
+    main {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+
+    }
+}
 
 
 footer {
