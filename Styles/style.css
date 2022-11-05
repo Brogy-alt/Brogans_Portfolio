@@ -335,6 +335,16 @@ textarea:hover {
 }
 
 
+@media only screen and (min-width: 300px) {
+
+    .cards { 
+        width: 80%;
+       
+    }
+
+}
+
+
 footer {
     display: flex;
     background-color: black;
