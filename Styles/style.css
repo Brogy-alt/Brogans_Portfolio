@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor:pointer;
+    /* cursor:pointer; */
 }
 
 head,
@@ -25,8 +25,6 @@ section {
 }
 
 
-
-
 /* Home section */
 
 #home {
@@ -34,10 +32,9 @@ section {
     width: 73%;
     height: 100vh;
     padding-top: 10%
-    /* margin-top: 10rem; */
 }
 
- h1{
+h1 {
     font-weight: 700;
 }
 
@@ -48,15 +45,18 @@ section {
     margin-right: 2rem
 }
 
+.me {
+    margin-top: 20px;
+}
+
 
 main {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/Assets/Images/Back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-        background: linear-gradient(rgba( 0,0,0,.7), rgba( 0,0,0,.7)) , url(/Assets/Images/Back3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    
-      }
+}
 
 /* End of home section */
 
@@ -67,7 +67,6 @@ body {
     color: #FDF7FF;
     font-size: 19px;
     font-family: 'Hind Vadodara', sans-serif;
-    /* padding: 5rem 1rem; */
     overflow-x: hidden;
 }
 
@@ -94,7 +93,7 @@ body {
 
 #socials {
     padding-bottom: 7rem;
-    
+
 }
 
 #time-line {
@@ -116,7 +115,7 @@ h3 {
 
 
 
-/* skills bar */ 
+/* skills bar */
 
 
 .skills {
@@ -125,7 +124,7 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
-    
+
 }
 
 
@@ -133,8 +132,8 @@ h3 {
 .skills-css,
 .skills-bootstrap {
     text-align: center;
-    
-    
+
+
 }
 
 .skills-html {
@@ -153,9 +152,10 @@ h3 {
     width: 40%;
     background-color: #808080;
     border: solid black;
+
 }
 
-/* END OF skills bar */ /* END OF skills bar */  /* END OF skills bar */  /* END OF skills bar */  /* END OF skills bar */  
+/* END OF skills bar */
 
 /* Timeline */
 
@@ -170,58 +170,58 @@ h3 {
     list-style: none;
     text-align: left;
     max-width: 40%;
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 720px) {
     .timeline-1 {
-      max-width: 98%;
-      padding: 25px;
+        max-width: 98%;
+        padding: 25px;
     }
-  }
-  
-  .timeline-1 .event {
+}
+
+.timeline-1 .event {
     border-bottom: 1px dashed #000;
     padding-bottom: 25px;
     margin-bottom: 25px;
     position: relative;
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 720px) {
     .timeline-1 .event {
-      padding-top: 30px;
+        padding-top: 30px;
     }
-  }
-  
-  .timeline-1 .event:last-of-type {
+}
+
+.timeline-1 .event:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
-  }
-  
-  .timeline-1 .event:before,
-  .timeline-1 .event:after {
+}
+
+.timeline-1 .event:before,
+.timeline-1 .event:after {
     position: absolute;
     display: block;
     top: 0;
-  }
-  
-  .timeline-1 .event:before {
+}
+
+.timeline-1 .event:before {
     left: -207px;
     content: attr(data-date);
     text-align: right;
     font-weight: 100;
     font-size: 0.9em;
     min-width: 120px;
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 720px) {
     .timeline-1 .event:before {
-      left: 0px;
-      text-align: left;
+        left: 0px;
+        text-align: left;
     }
-  }
-  
-  .timeline-1 .event:after {
+}
+
+.timeline-1 .event:after {
     -webkit-box-shadow: 0 0 0 3px #ffffff;
     box-shadow: 0 0 0 3px #333232;
     left: -55.8px;
@@ -231,17 +231,17 @@ h3 {
     width: 9px;
     content: "";
     top: 5px;
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 720px) {
     .timeline-1 .event:after {
-      left: -31.8px;
+        left: -31.8px;
     }
-  }
+}
 
-  /* end of timeline */
+/* end of timeline */
 
-  /* socials */
+/* socials */
 
 .contact,
 .socials {
@@ -249,7 +249,7 @@ h3 {
     padding: 2rem 5rem;
 }
 
-/* form */  
+/* form */
 
 input[type=submit] {
     color: white;
@@ -295,7 +295,7 @@ textarea:hover {
 
 /* Animation */
 
-.btn:hover i{
+.btn:hover i {
     animation: awesomeAnimation linear 1s infinite;
     transform: scale(1.1);
 }
@@ -316,13 +316,23 @@ textarea:hover {
 }
 
 @media (max-width: 300px) {
-   
+
     .card {
         width: 90% !important;
     }
-
 }
 
+
+@media only screen and (max-width: 375px) {
+
+    .mx-auto {
+        justify-content: flex-start;
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        width: 100% !important;
+    }
+
+}
 
 
 footer {
@@ -331,10 +341,11 @@ footer {
 }
 
 /* Footer */
-.footer{
+.footer {
     padding: 12px 20px;
 }
-.footer .lead{
+
+.footer .lead {
     text-align: center;
     margin-left: 15px;
 
