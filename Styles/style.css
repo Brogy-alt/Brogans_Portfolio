@@ -323,7 +323,7 @@ textarea:hover {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 300px) {
 
     .mx-auto {
         justify-content: flex-start;
