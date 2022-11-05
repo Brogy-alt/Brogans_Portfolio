@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor:pointer;
 }
 
 head,
@@ -92,13 +93,6 @@ body {
 }
 
 
-.btn:hover {
-    transform: scale(1.1);
-}
-
-.btn {
-    height: 3rem;
-}
 
 
 h1,
@@ -292,13 +286,17 @@ textarea:hover {
 }
 
 
+/* Animation */
 
-
-.iconz, .btn:hover{
+.btn:hover i{
     animation: awesomeAnimation linear 1s infinite;
-     
-    
+    transform: scale(1.1);
 }
+
+.btn {
+    height: 3rem;
+}
+
 
 /* @keyframes awesomeAnimation {
     0% {
