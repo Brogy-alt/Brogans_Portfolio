@@ -21,7 +21,7 @@ footer {
 }
 
 section {
-    padding: 3rem 0rem;
+    padding: 10px 0rem;
 }
 
 
@@ -92,7 +92,14 @@ body {
 
 }
 
+#socials {
+    padding-bottom: 7rem;
+    
+}
 
+#time-line {
+    padding-bottom: 7rem;
+}
 
 
 h1,
@@ -321,7 +328,14 @@ textarea:hover {
 footer {
     display: flex;
     background-color: black;
-    
-
 }
 
+/* Footer */
+.footer{
+    padding: 12px 20px;
+}
+.footer .lead{
+    text-align: center;
+    margin-left: 15px;
+
+}
